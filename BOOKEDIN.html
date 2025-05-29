@@ -1,0 +1,597 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" class="" href="NODEJS.css">
+   <title>BOOKEDIN</title>
+</head>
+<body class="lg:px-20 md:px-10 ">
+ 
+<!--NAV-->
+<div id="HOME" >
+  <nav class=" text-black rounded-bl-full rounded-br-full px-16 bgbg py-4 grid grid-cols-3">
+  <div class="flex     my-auto">
+    <svg fill="#4940c4" width="88px" height="88px" viewBox="-2.4 -2.4 28.80 28.80" role="img" xmlns="http://www.w3.org/2000/svg" stroke="#4940c4" stroke-width="0.192" transform="rotate(0)matrix(1, 0, 0, 1, 0, 0)">
+
+      <g id="SVGRepo_bgCarrier" stroke-width="0">
+      
+      <path transform="translate(-2.4, -2.4), scale(0.8999999999999999)" d="M16,29.029932962632493C19.419769568698868,29.775500161375046,22.799834751273824,27.73759168423236,25.441878725793263,25.441878725793266C28.30717060009551,22.9521822071188,30.741536310658013,19.78733733090678,30.995627282481443,16C31.264381251274838,11.994104270859768,30.174017549782963,7.376045478416735,26.799891101640284,5.200108898359719C23.63762438574928,3.1607983008592435,19.72238448269046,5.779421235970716,16,6.329486921625703C13.193403560544922,6.744224410996995,10.029925815676181,6.018629745457261,7.981018807075408,7.981018807075406C5.907953220112898,9.966546317496892,5.507941547648139,13.15680735676055,5.90313266080461,15.999999999999998C6.25052964854195,18.499338995579272,8.392570799601787,20.067207717353035,9.938186544069968,22.06181345593003C11.898507668719992,24.59159343434635,12.873038275783616,28.34820279150105,16,29.029932962632493" fill="#7ed0ec" strokewidth="0"/>
+      
+      </g>
+      
+      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+      
+      <g id="SVGRepo_iconCarrier">
+      
+      <path d="m20.348 7.829-1.491-2.65 2.889.001c.077 0 .167.051.21.12l1.533 2.529zm-5.344 16.046c-.07.125-.161.125-.19.125h-2.956l4.591-8.243a.442.442 0 0 0-.384-.657l-7.825.01-1.556-2.694h11.397c.248-.017.362-.158.393-.231l1.879-3.473h3.101zm-3.91-.314-1.522-2.506c-.023-.037-.034-.128.014-.214l2.694-4.853 3.034-.004zM5.92 18.403l-1.508-2.68 1.52-2.848 1.524 2.64c-.474.891-1.213 2.283-1.536 2.888zm-3.668.417a.268.268 0 0 1-.207-.12L.51 16.17h3.141l1.491 2.65-2.891-.001zM8.996.126C9.066 0 9.156 0 9.186 0h2.968L7.551 8.243c-.11.167-.11.712.58.657l7.63-.01c.527.92 1.002 1.752 1.51 2.642H5.922a.465.465 0 0 0-.397.234l-1.879 3.522h-3.1L8.996.126zm3.917.323 1.515 2.496c.023.037.034.128-.015.214L11.72 8.012l-3.032.004zm5.166 5.145 1.509 2.68-1.538 2.844c-.517-.905-.997-1.745-1.529-2.673.328-.6 1.195-2.189 1.558-2.851z"/>
+      
+      </g>
+      
+      </svg><h1 class="my-auto text-blue-800 text-3xl pl-2">booKed<span class="text-blue-700 text-lg pl-1">IN</span></h1></div>
+<div class="my-auto   col-span-2"> 
+  <ol class=" flex flex-row px-5    text-white gap-2.5  justify-end">
+  <a href="#form" id="lolbtn"> <button  class="btn button-92  p-3 rounded-md px-3.5"><i class="fa-solid fa-calendar-days my-auto px-2"></i>Prendre un rendez-vous</button> </a> 
+  <a href="loginadmoin.html">  <button  class="btn button-92   p-3 rounded-md "><i class="fa-solid fa-headset my-auto px-2"></i>Admin</button> </a>
+<a href="#INFO" class="my-auto"> <button class="button-92 ml-2 bgbtn  rounded-full my-auto"><i style="" class="fa-solid fa-circle-info text-xl"></i></button> </a> 
+  </ol></div>
+  </nav>
+</div>
+ <!--NAV/END-->
+
+<!--HERO-->
+<div class="max-sm:mx-2 sm:mx-8 max-md:mx-2 md:mx-2">
+<div class="grid f lg:grid-cols-2 gap-5 sm:gap-20 md:gap-20 max-sm:gap-16 mt-5 md:px-9 max-sm:px-6  bg-opacity-30 md:p-5 rounded-t-2xl">
+<div class="break-words  flex flex-col mt-12   m-auto ">
+<h1 class="text-3xl max-sm:text-center txtbg text-start pb-3 md:px-5 max-sm:px-4 text-blue-700">
+Bienvenue sur l'application de prise de rendez-vous dans les (*******) publics
+</h1>
+<p class="text-blue-400 max-sm:text-center mb-5 md:px-5 text-start py-3" style="line-height: 25px;">
+Pour mieux accueillir ses patients, le Ministère de la santé à mis en place un système informatisé de gestion des rendez-vous, qui permet aux patients de prendre rendez-vous par internet ou par téléphone
+
+Ce service vous permet de réduire le nombre des déplacements
+
+Ce service vous permet de réduire les frais liés aux déplacements
+
+Ce service vous garanties une optimisation de votre temps et de votre énergie
+</p><a href="">
+  <a href="#form">
+<button class="button-92 max-sm:mx-auto bgbtn px-5 py-3 rounded-full text-xl  flex   "><i class="fa-solid fa-handshake my-auto px-3 text-xl"></i>Prendre un rendez-vous</button></a>
+</a></div>
+<div class="p-5 bg-blue-200 bgbg px-8  rounded-tl-full rounded-br-full rounded-tr-3xl">
+<img src="3870268.png-removebg-preview.png" class="rounded-2xl " alt=""></div>
+</div>
+</div>
+<!--HERO/END-->
+
+
+<!--HERO SECTION1/-->
+<div class="max-sm:mx-2">
+<div class="flex flex-col my-52 mt-52 " id="INFO">
+<h1  class="text-3xl md:px-60 max-sm:text-2xl text-blue-800 max-sm:rounded-t-3xl  bgbg p-11 md:rounded-t-full  text-center txtbg" >Online appointment booking made simple with a 3-step  setup process</h1>
+
+<div class="p-8  bg-blue-500 bg-opacity-25 py-32 backdrop-blur-sm">
+  <img src="3-step-appointment-scheduling-process-1.svg" class="" alt="" ">
+
+</div>
+  <p class="bgbg md:rounded-b-full max-sm:rounded-b-3xl p-8"></p>
+</div>
+
+</div>
+<!--HERO SECTION/-->
+<div class="max-sm:mx-2">
+<div class="mt-24">
+ <div class="grid grid-rows-2 gap-3"><h1 class="m-auto text-4xl max-sm:text-3xl text-center text-blue-800 txtbg">Appointy can serve almost any industry segment</h1> 
+  <h4 class="m-auto text-2xl max-sm:text-md    md:px-32 text-center text-blue-500  ">Our appointment booking system is fit for all service-based local businesses, multi-location enterprises, franchises, and more.
+
+  </h4></div>
+ <div class="   grid grid-rows-3    lg:px-20 py-16 backdrop-blur-sm ">
+  <div class="grid sm:gap-y-6 lg:grid-cols-6 max-sm:gap-y-6  sm:grid-cols-3 max-sm:grid-cols-3 md:grid-cols-3 md:gap-10  text-center md:px-10 justify-center mb-10   lg:gap-2  ">
+    <section class="cursor-help button-92 bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" class="mx-auto text-3xl" xmlns="http://www.w3.org/2000/svg">
+  <path d="M15.4914 34.4799V49.2799C15.4914 49.2799 15.4914 54.1799 19.2914 54.1799C23.0914 54.1799 23.0914 49.4799 23.0914 49.4799V34.6799C23.0914 34.6799 26.2056 33.4534 27.9914 31.2799C27.9914 31.2799 47.7914 25.3799 54.3914 29.9799V18.2799C54.3914 18.2799 48.7914 22.0799 27.9914 16.4799C27.9914 16.4799 23.9914 13 19.1914 13C14.3914 13 8.29138 16.9069 8.29138 24.0069C8.29138 31.1069 13.6914 34.4799 15.4914 34.4799Z" fill="white" stroke="#FFFFFF" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M19.3914 28.8798C22.0423 28.8798 24.1914 26.7308 24.1914 24.0798C24.1914 21.4288 22.0423 19.2798 19.3914 19.2798C16.7404 19.2798 14.5914 21.4288 14.5914 24.0798C14.5914 26.7308 16.7404 28.8798 19.3914 28.8798Z" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>  
+<p class="text-white">Salon & Beauty</p></section>
+
+<section class="cursor-help button-92 bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+      <svg width="61" height="60" viewBox="0 0 61 60" class="mx-auto text-3xl" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18.4584 37.6743L53.7021 46.4082C53.7021 46.4082 44.7863 47.9866 41.0102 47.25C37.2341 46.5134 27.584 44.4089 27.584 44.4089L28.1085 40.5155" fill="white"/>
+        <path d="M18.4584 37.6743L53.7021 46.4082C53.7021 46.4082 44.7863 47.9866 41.0102 47.25C37.2341 46.5134 27.584 44.4089 27.584 44.4089L28.1085 40.5155" stroke="#FFFFFF" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20.5903 46.5134L46.978 10C46.978 10 37.3588 15.6074 34.3691 19.3892C31.3793 23.1709 23.97 32.8209 23.97 32.8209L27.6097 36.081" fill="white"/>
+        <path d="M20.5903 46.5134L46.978 10C46.978 10 37.3588 15.6074 34.3691 19.3892C31.3793 23.1709 23.97 32.8209 23.97 32.8209L27.6097 36.081" stroke="#FFFFFF" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M18.6771 51.4986C20.7583 51.4986 22.4454 49.8061 22.4454 47.7183C22.4454 45.6305 20.7583 43.938 18.6771 43.938C16.596 43.938 14.9089 45.6305 14.9089 47.7183C14.9089 49.8061 16.596 51.4986 18.6771 51.4986Z" fill="white" stroke="#FFFFF" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16.1562 40.0577C18.2374 40.0577 19.9245 38.3652 19.9245 36.2774C19.9245 34.1896 18.2374 32.4971 16.1562 32.4971C14.0751 32.4971 12.388 34.1896 12.388 36.2774C12.388 38.3652 14.0751 40.0577 16.1562 40.0577Z" fill="white" stroke="#FFFFF" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M17.9594 51.5886L18.1388 54.3788" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg><p class="text-white">Barber</p>
+    </section>
+
+  <section class="cursor-help button-92 bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+    <svg width="60" height="61" class="mx-auto" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0)">
+      <path d="M13.3881 21.3488V48.0317H32.3298V18.1848L13.3881 21.3488Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22.8589 19.7667V15.8645" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M26.462 12.1732C26.462 10.1693 23.3736 5.2124 22.8589 5.2124C22.2412 5.2124 19.2558 10.0638 19.2558 12.1732C19.2558 14.177 20.903 15.8645 22.8589 15.8645C24.8149 15.8645 26.462 14.2825 26.462 12.1732Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M17.7117 26.0947V31.7899" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M48.5272 50.4436V53.8751H45L43.3604 50.4436" fill="white"/>
+      <path d="M48.5272 50.4436V53.8751H45L43.3604 50.4436" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      <path d="M26.3482 50.4436V53.8751H29.8755L31.515 50.4436" fill="white"/>
+      <path d="M26.3482 50.4436V53.8751H29.8755L31.515 50.4436" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      <path d="M50.2747 46.9233H24.3544V50.4434H50.2747V46.9233Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      <path d="M44.7951 46.9232H29.5104C26.6627 46.9232 24.3544 44.5543 24.3544 41.632C24.3544 38.7097 26.6627 36.3408 29.5104 36.3408H44.7951C47.6427 36.3408 49.9511 38.7097 49.9511 41.632C49.9511 44.5543 47.6427 46.9232 44.7951 46.9232Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      <path d="M44.8814 36.3408H32.9837C30.1144 36.3408 27.7845 33.9499 27.7845 31.0054C27.7845 28.0609 30.1144 25.6699 32.9837 25.6699H44.8814C47.7506 25.6699 50.0805 28.0609 50.0805 31.0054C50.0805 33.9499 47.7614 36.3408 44.8814 36.3408Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      <path d="M42.5514 25.6699C44.4607 25.6699 46.014 27.2639 46.014 29.2232C46.014 31.1825 44.4607 32.7765 42.5514 32.7765H34.6232H33.825C32.865 32.7765 32.0884 31.9795 32.0884 30.9943C32.0884 30.0091 32.865 29.2121 33.825 29.2121H38.9379" fill="white"/>
+      <path d="M42.5514 25.6699C44.4607 25.6699 46.014 27.2639 46.014 29.2232C46.014 31.1825 44.4607 32.7765 42.5514 32.7765H34.6232H33.825C32.865 32.7765 32.0884 31.9795 32.0884 30.9943C32.0884 30.0091 32.865 29.2121 33.825 29.2121H38.9379" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      <path d="M40.8148 36.3408C42.724 36.3408 44.2773 37.9348 44.2773 39.8941C44.2773 41.8534 42.724 43.4474 40.8148 43.4474H32.8866H32.0884C31.1284 43.4474 30.3517 42.6504 30.3517 41.6652C30.3517 40.68 31.1284 39.883 32.0884 39.883H37.2013" fill="white"/>
+      <path d="M40.8148 36.3408C42.724 36.3408 44.2773 37.9348 44.2773 39.8941C44.2773 41.8534 42.724 43.4474 40.8148 43.4474H32.8866H32.0884C31.1284 43.4474 30.3517 42.6504 30.3517 41.6652C30.3517 40.68 31.1284 39.883 32.0884 39.883H37.2013" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      </g>
+      <defs>
+      <clipPath id="clip0">
+      <rect width="60" height="60.5355" fill="white"/>
+      </clipPath>
+      </defs>
+      </svg>
+      <p class="text-white">Spa</p></section>
+  
+  
+  <section class="cursor-help button-92 bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+    <svg width="61" height="60" class="mx-auto" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0)">
+      </g>
+      <path d="M27.5928 30.2536C27.5928 30.2536 30.5928 39.7999 26.3928 44.4999C22.1928 49.1999 12.8928 53.4999 11.2928 44.9999C9.69276 36.4999 10.6928 18.2999 20.6928 16.1999C24.1928 15.5999 27.8928 17.5999 27.5928 24.2999C27.3928 27.3999 27.3881 28.5 27.3881 28.5" fill="white"/>
+      <path d="M27.5928 30.2536C27.5928 30.2536 30.5928 39.7999 26.3928 44.4999C22.1928 49.1999 12.8928 53.4999 11.2928 44.9999C9.69276 36.4999 10.6928 18.2999 20.6928 16.1999C24.1928 15.5999 27.8928 17.5999 27.5928 24.2999C27.3928 27.3999 27.3881 28.5 27.3881 28.5L27.5928 30.2536Z" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M31.6927 10V22.2C31.6927 22.2 32.1927 27.8 24.4927 29.8" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M35.3881 30C35.3881 30 32.7927 39.7999 36.9927 44.4999C41.1927 49.1999 50.4927 53.4999 52.0927 44.9999C53.6927 36.4999 52.6927 18.2999 42.6927 16.1999C39.1927 15.5999 35.4927 17.5999 35.7927 24.2999C35.9927 27.3999 35.7927 28.6999 35.7927 28.6999" fill="white"/>
+      <path d="M35.3881 30C35.3881 30 32.7927 39.7999 36.9927 44.4999C41.1927 49.1999 50.4927 53.4999 52.0927 44.9999C53.6927 36.4999 52.6927 18.2999 42.6927 16.1999C39.1927 15.5999 35.4927 17.5999 35.7927 24.2999C35.9927 27.3999 35.7927 28.6999 35.7927 28.6999L35.3881 30Z" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M31.6928 10V22.2C31.6928 22.2 31.1928 27.8 38.8928 29.8" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <defs>
+      <clipPath id="clip0">
+      <rect width="60" height="60" fill="white" transform="translate(0.0223389)"/>
+      </clipPath>
+      </defs>
+      </svg><p class="text-white">Health & Wellness</p></section>
+
+
+  <section class="cursor-help button-92 bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+    <svg width="61" height="60" class="mx-auto" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M39.3881 43H22.3881V48H39.3881V43Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round"/>
+      <path d="M40.9809 36H43.2671C44.2832 36 45.1468 36.8608 45.1468 37.8734V52.1517C45.1468 53.1644 44.2832 54.0251 43.2671 54.0251H40.9809C39.9649 54.0251 39.1012 53.1644 39.1012 52.1517V37.8734C39.1012 36.8101 39.9649 36 40.9809 36Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round"/>
+      <path d="M18.5259 36H20.812C21.8281 36 22.6918 36.8608 22.6918 37.8734V52.1517C22.6918 53.1644 21.8281 54.0251 20.812 54.0251H18.5259C17.5098 54.0251 16.6462 53.1644 16.6462 52.1517V37.8734C16.6462 36.8101 17.5098 36 18.5259 36Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round"/>
+      <path d="M12.4198 39.9199H16V49.9199H12.4198C11.6173 49.9199 11 49.4391 11 48.8141V41.0738C11 40.4007 11.6173 39.9199 12.4198 39.9199Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round"/>
+      <path d="M46 39.9199H49.5803C50.3828 39.9199 51 40.403 51 41.031V48.8088C51 49.4368 50.3828 49.9199 49.5803 49.9199H46V39.9199Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round"/>
+      <path d="M30.2182 12L30.2182 28.803" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30.2182 35.6308C33.9905 35.6308 37.0484 32.5739 37.0484 28.803C37.0484 25.0322 33.9905 21.9753 30.2182 21.9753C26.446 21.9753 23.3881 25.0322 23.3881 28.803C23.3881 32.5739 26.446 35.6308 30.2182 35.6308Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M24.3881 11.06C23.8689 11.06 23.4481 11.4809 23.4481 12C23.4481 12.5191 23.8689 12.94 24.3881 12.94V11.06ZM36.3881 12.94C36.9072 12.94 37.3281 12.5191 37.3281 12C37.3281 11.4809 36.9072 11.06 36.3881 11.06V12.94ZM24.3881 12.94H36.3881V11.06H24.3881V12.94Z" fill="#B8C0CC"/>
+      </svg><p class="text-white">Fitness & Sports</p></section>
+
+  <section class="button-92 cursor-help bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+    <svg width="61" height="60" class="mx-auto" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M30.8881 33C35.0302 33 38.3881 29.6421 38.3881 25.5C38.3881 21.3579 35.0302 18 30.8881 18C26.7459 18 23.3881 21.3579 23.3881 25.5C23.3881 29.6421 26.7459 33 30.8881 33Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      <path d="M32.7658 38.1111L33.3881 35H31.3436H29.3881L30.0103 38.1111L30.8992 38.6667L29.6547 42.6667L31.3436 47L33.1214 42.6667L31.8769 38.6667L32.7658 38.1111Z" fill="#B8C0CC"/>
+      <path d="M25.6421 37C25.6421 43.8891 30.2396 48.8777 31.7721 48.8777C33.3046 48.8777 38.1772 40.9592 37.9611 37C46.3545 39.6725 47.7062 47.6157 47.3329 51.2533C45.1717 52.1688 39.0338 54 31.7721 54C24.5104 54 18.4903 52.1688 16.3881 51.2533C16.3881 42.5825 22.5574 38.1383 25.6421 37Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg><p class="text-white">Professional Services</p></section>
+</div>
+<div class="grid sm:gap-y-6 sm:grid-cols-3 lg:grid-cols-6  md:grid-cols-3 md:gap-10  max-sm:gap-y-6  max-sm:grid-cols-3 mb-10 text-center md:px-10 justify-centerpx-10  lg:gap-2 ">
+  <section class=" cursor-help button-92 bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+    <svg width="60" height="60" class="mx-auto" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0)">
+      <rect x="10.7562" y="22" width="39.1994" height="24.3335" rx="2" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+      <rect x="28.4895" y="47.4172" width="3.44498" height="6.02889" fill="#B8C0CC"/>
+      <rect x="21.9736" y="56" width="2.84665" height="16.4765" rx="1.32776" transform="rotate(-90 21.9736 56)" fill="#B8C0CC"/>
+      <path d="M22.6825 33.821C24.8022 33.821 26.5206 32.1346 26.5206 30.0544C26.5206 27.9742 24.8022 26.2878 22.6825 26.2878C20.5628 26.2878 18.8444 27.9742 18.8444 30.0544C18.8444 32.1346 20.5628 33.821 22.6825 33.821Z" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+      <path d="M27.7062 41.4833C27.8952 41.485 28.0822 41.4451 28.2534 41.3667C28.4245 41.2883 28.5755 41.1733 28.695 41.0302C28.8146 40.8871 28.8998 40.7197 28.9443 40.5401C28.9888 40.3606 28.9913 40.1736 28.9521 39.9929C28.6085 38.5856 27.7896 37.3323 26.6276 36.4357C25.4657 35.5392 24.0284 35.0515 22.5479 35.0515C21.0674 35.0515 19.6301 35.5392 18.4681 36.4357C17.3061 37.3323 16.4873 38.5856 16.1437 39.9929C16.1044 40.1736 16.107 40.3606 16.1514 40.5401C16.1959 40.7197 16.2812 40.8871 16.4007 41.0302C16.5203 41.1733 16.6713 41.2883 16.8424 41.3667C17.0135 41.4451 17.2005 41.485 17.3895 41.4833H27.7062Z" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+      <path d="M31.6096 29.3601H45.103" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round"/>
+      <path d="M35.903 33.6533H44.4897" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round"/>
+      <path d="M40.8097 38.5601H44.4897" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round"/>
+      </g>
+      <defs>
+      <clipPath id="clip0">
+      <rect width="60" height="60" fill="white"/>
+      </clipPath>
+      </defs>
+      </svg>
+      
+    <p class="text-white">Tutoring Services</p></section>
+
+  <section class=" button-92 cursor-help bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+    <svg width="61" class="mx-auto" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0)">
+      <path d="M21.8015 16.9444H47.472V54.9146H21.8015C16.6524 54.9146 15.4649 52.2145 15.5148 50.8644V22.658C15.5148 17.9136 19.7059 16.872 21.8015 16.9444Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M21.2027 17.3115L21.2027 45.7255" stroke="#B8C0CC" stroke-width="1.88"/>
+      <path d="M15.541 50.8971C15.2506 49.216 15.9591 45.8538 21.116 45.8538C26.2728 45.8538 40.2509 45.8538 46.5953 45.8538" stroke="#B8C0CC" stroke-width="1.88"/>
+      <rect x="25.5403" y="23.671" width="17.4146" height="5.30047" rx="1.06" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+      </g>
+      <defs>
+      <clipPath id="clip0">
+      <rect width="34" height="40" fill="white" transform="translate(14.388 16)"/>
+      </clipPath>
+      </defs>
+      </svg>
+    <p class="text-white">Education & Non-profits</p>
+  </section>
+
+
+<section class=" button-92 bgbtn cursor-help bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+  <svg width="61" class="mx-auto" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="40.3881" y="17" width="9.57983" height="36.8824" rx="1" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <rect x="10.9203" y="40.4707" width="9.83529" height="13.2467" rx="1" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <rect x="25.8222" y="29.2942" width="9.57983" height="24.5882" rx="1" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <line x1="2.28044" y1="54.06" x2="58.9439" y2="54.06" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M28.06 34.8823C28.06 40.5363 23.4798 45.1188 17.8313 45.1188C12.1827 45.1188 7.60257 40.5363 7.60257 34.8823C7.60257 29.2282 12.1827 24.6458 17.8313 24.6458C23.4798 24.6458 28.06 29.2282 28.06 34.8823Z" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <path d="M21.1569 37.3157C21.1569 38.031 20.9067 38.6345 20.4064 39.1263C19.915 39.618 19.2493 39.9265 18.4094 40.0517V40.8966C18.4094 41.1023 18.3469 41.2677 18.2218 41.3929C18.0967 41.527 17.9314 41.594 17.7259 41.594C17.5204 41.594 17.3551 41.527 17.23 41.3929C17.1049 41.2677 17.0424 41.1023 17.0424 40.8966V40.0785C16.5331 40.0338 16.0372 39.9265 15.5547 39.7566C15.0722 39.5867 14.6567 39.3632 14.3083 39.086C14.1921 39.0056 14.1117 38.9162 14.067 38.8178C14.0223 38.7195 14 38.5987 14 38.4557C14 38.2679 14.0536 38.1025 14.1608 37.9595C14.277 37.8164 14.4065 37.7449 14.5495 37.7449C14.6389 37.7449 14.7193 37.7627 14.7907 37.7985C14.8712 37.8253 14.9739 37.8745 15.099 37.946C15.51 38.2143 15.9121 38.411 16.3052 38.5362C16.7073 38.6613 17.1272 38.7239 17.5651 38.7239C18.1637 38.7239 18.6238 38.6077 18.9455 38.3752C19.2761 38.1427 19.4414 37.8075 19.4414 37.3693C19.4414 37.11 19.352 36.8999 19.1733 36.739C18.9946 36.578 18.7713 36.4529 18.5032 36.3635C18.2352 36.2651 17.8599 36.1533 17.3774 36.0282C16.7073 35.8583 16.1623 35.6884 15.7423 35.5185C15.3224 35.3397 14.9605 35.0715 14.6567 34.7138C14.3529 34.3562 14.201 33.8733 14.201 33.2653C14.201 32.5411 14.4602 31.9242 14.9784 31.4145C15.4966 30.9049 16.1757 30.5875 17.0156 30.4623V29.6173C17.0156 29.4117 17.0781 29.2463 17.2032 29.1211C17.3283 28.987 17.4936 28.9199 17.6991 28.9199C17.9046 28.9199 18.0699 28.987 18.195 29.1211C18.3201 29.2463 18.3826 29.4117 18.3826 29.6173V30.4489C19.285 30.5651 20.0624 30.8915 20.7146 31.4279C20.9291 31.5889 21.0363 31.799 21.0363 32.0583C21.0363 32.246 20.9782 32.4115 20.8621 32.5545C20.7548 32.6976 20.6253 32.7691 20.4734 32.7691C20.393 32.7691 20.3126 32.7557 20.2321 32.7289C20.1607 32.702 20.0624 32.6484 19.9373 32.5679C19.571 32.3086 19.2225 32.1164 18.8919 31.9912C18.5702 31.8571 18.186 31.79 17.7393 31.79C17.1853 31.79 16.743 31.9152 16.4124 32.1656C16.0818 32.407 15.9166 32.7423 15.9166 33.1715C15.9166 33.4665 16.0104 33.7079 16.198 33.8957C16.3856 34.0745 16.6224 34.2131 16.9083 34.3115C17.1943 34.4098 17.5829 34.5216 18.0743 34.6467C18.7266 34.8077 19.2582 34.9731 19.6692 35.143C20.0802 35.3129 20.4287 35.5722 20.7146 35.9209C21.0095 36.2606 21.1569 36.7256 21.1569 37.3157Z" fill="#B8C0CC"/>
+    </svg>
+  <p class="text-white">Banking & Finance</p></section>
+
+  <section class=" button-92 cursor-help bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+    <svg width="61" class="mx-auto" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M15.5517 27.8193C15.3569 27.1417 15.8655 26.4664 16.5705 26.4664H49.8226C50.5128 26.4664 51.0189 27.1156 50.8505 27.785L45.5937 48.6797C45.4752 49.1509 45.0516 49.4811 44.5658 49.4811H22.5783C22.1056 49.4811 21.6901 49.1682 21.5595 48.714L15.5517 27.8193Z" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+      <path d="M16.1775 29.4868L13.9144 22.1316L9.38806 21" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round"/>
+      <path d="M44.467 26.658L38.8091 49.2895" stroke="#B8C0CC" stroke-width="1.88"/>
+      <path d="M27.4933 49.2896L21.8354 26.658" stroke="#B8C0CC" stroke-width="1.88"/>
+      <path d="M33.1512 26.658V49.2895" stroke="#B8C0CC" stroke-width="1.88"/>
+      <path d="M48.9933 34.5789H17.3091" stroke="#B8C0CC" stroke-width="1.88"/>
+      <path d="M46.7302 42.5H19.5723" stroke="#B8C0CC" stroke-width="1.88"/>
+      <circle cx="26.3617" cy="52.6843" r="2.45474" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+      <circle cx="41.0723" cy="52.6843" r="2.45474" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+      </svg>
+    <p class="text-white">Retail</p></section>
+    
+<section class=" button-92 bgbtn cursor-help bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+  <svg width="61" class="mx-auto" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="27.3281" y="12.94" width="17.12" height="41.12" rx="1.06" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <rect x="30.3881" y="17" width="4.58861" height="4.58861" rx="1" fill="#EAEFF4"/>
+    <rect x="30.3881" y="26" width="4.58861" height="4.58861" rx="1" fill="#EAEFF4"/>
+    <rect x="30.3881" y="35" width="4.58861" height="4.58861" rx="1" fill="#EAEFF4"/>
+    <rect x="30.3881" y="44" width="4.58861" height="4.58861" rx="1" fill="#EAEFF4"/>
+    <rect x="36.1812" y="17" width="4.58861" height="4.58861" rx="1" fill="#EAEFF4"/>
+    <rect x="36.1812" y="26" width="4.58861" height="4.58861" rx="1" fill="#EAEFF4"/>
+    <rect x="36.1812" y="35" width="4.58861" height="4.58861" rx="1" fill="#EAEFF4"/>
+    <rect x="36.1812" y="44" width="4.58861" height="4.58861" rx="1" fill="#EAEFF4"/>
+    <rect x="17.3881" y="33" width="14" height="21" rx="1" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <rect x="20.3881" y="47" width="3" height="3" rx="0.7" fill="#EAEFF4"/>
+    <rect x="20.3881" y="42" width="3" height="3" rx="0.7" fill="#EAEFF4"/>
+    <rect x="20.3881" y="37" width="3" height="3" rx="0.7" fill="#EAEFF4"/>
+    <rect x="25.3881" y="47" width="3" height="3" rx="0.7" fill="#EAEFF4"/>
+    <rect x="25.3881" y="42" width="3" height="3" rx="0.7" fill="#EAEFF4"/>
+    <rect x="25.3881" y="37" width="3" height="3" rx="0.7" fill="#EAEFF4"/>
+    </svg>
+  <p class="text-white">Real Estate</p></section>
+
+  <section class="button-92 cursor-help bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+    <svg width="61" class="mx-auto" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="17.1181" y="42.0134" width="5.50637" height="5.50637" rx="1" fill="#EAEFF4"/>
+      <rect x="40.2844" y="42.0134" width="5.50637" height="5.50637" rx="1" fill="#EAEFF4"/>
+      <rect x="18.7266" y="29.4805" width="25.6315" height="5.39073" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="14.2003" y="34.8203" width="34.6839" height="17.7997" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M27.0285 51.9838V44.0039H36.4166V51.9838" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M38.5013 20.7507L31.3753 24.8649L31.3753 16.6365L38.5013 20.7507Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M31.3768 17.1292V28.797" stroke="#B8C0CC" stroke-width="1.88"/>
+      </svg>
+      <p class="text-white">Communities & Facilities</p></section>
+</div>
+<div class="grid sm:grid-cols-3 sm:gap-y-6 max-sm:gap-y-6  md:grid-cols-3 md:gap-10  max-sm:grid-cols-3 lg:grid-cols-6 mb-10 cursor-help text-center md:px-10 justify-centerpx-10  lg:gap-2  ">
+  <section class=" button-92 cursor-help bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+    <svg width="60" class="mx-auto" height="61" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M45.9775 56.9478H14.9434C14.1014 56.9478 13.5 56.106 13.5 55.2641V53.5804C13.5 52.5983 14.1014 51.8967 14.9434 51.8967H45.9775C46.8195 51.8967 47.4209 52.5983 47.4209 53.5804V55.2641C47.4209 56.106 46.6992 56.9478 45.9775 56.9478Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      <path d="M22.5 32.601L22.5 51.0391C22.5 51.5394 21.6667 51.8967 20.8333 51.8967L19.1667 51.8967C18.1944 51.8967 17.5 51.5394 17.5 51.0391L17.5 32.601C17.5 32.1008 18.1944 31.7434 19.1667 31.7434L20.8333 31.7434C21.6667 31.7434 22.5 32.1722 22.5 32.601Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      <path d="M33.5 32.601L33.5 51.0391C33.5 51.5394 32.6667 51.8967 31.8333 51.8967L30.1667 51.8967C29.1944 51.8967 28.5 51.5394 28.5 51.0391L28.5 32.601C28.5 32.1008 29.1944 31.7434 30.1667 31.7434L31.8333 31.7434C32.6667 31.7434 33.5 32.1722 33.5 32.601Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      <path d="M44.5 32.601L44.5 51.0391C44.5 51.5394 43.6667 51.8967 42.8333 51.8967L41.1667 51.8967C40.1944 51.8967 39.5 51.5394 39.5 51.0391L39.5 32.601C39.5 32.1008 40.1944 31.7434 41.1667 31.7434L42.8333 31.7434C43.6667 31.7434 44.5 32.1722 44.5 32.601Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      <path d="M46.629 31.7562H15.5949C14.7529 31.7562 14.1515 30.9143 14.1515 30.0725V28.3888C14.1515 27.4066 14.7529 26.7051 15.5949 26.7051H46.629C47.471 26.7051 48.0724 27.4066 48.0724 28.3888V30.0725C48.0724 30.9143 47.3507 31.7562 46.629 31.7562Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+      <path d="M51 26.5H11L31 12L51 26.5Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-linejoin="round"/>
+      </svg>
+    <p class="text-white">Government & Public sector</p></section>
+
+  <section class=" button-92 cursor-help bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+    <svg width="61" class="mx-auto" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M53.1777 38.9743L34.9027 24.0014V20H28.5517V23.7432L10.0174 38.9743" fill="white"/>
+      <path d="M53.1777 38.9743L34.9027 24.0014V20H28.5517V23.7432L10.0174 38.9743" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M48.3822 35.8765C48.3822 36.0055 48.3822 36.1346 48.3822 36.1346V54.9798C48.3822 56.0125 47.6045 56.7869 46.5676 56.7869H16.6276C15.5907 56.7869 14.813 56.0125 14.813 54.9798V36.1346" fill="white"/>
+      <path d="M48.3822 35.8765C48.3822 36.0055 48.3822 36.1346 48.3822 36.1346V54.9798C48.3822 56.0125 47.6045 56.7869 46.5676 56.7869H16.6276C15.5907 56.7869 14.813 56.0125 14.813 54.9798V36.1346" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M26.388 37.3801C25.8689 37.3801 25.448 37.8009 25.448 38.3201C25.448 38.8392 25.8689 39.2601 26.388 39.2601V37.3801ZM37.0281 39.2601C37.5473 39.2601 37.9681 38.8392 37.9681 38.3201C37.9681 37.8009 37.5473 37.3801 37.0281 37.3801V39.2601ZM26.388 39.2601H37.0281V37.3801H26.388V39.2601Z" fill="#B8C0CC"/>
+      <path d="M32.6481 33C32.6481 32.4809 32.2272 32.06 31.7081 32.06C31.1889 32.06 30.7681 32.4809 30.7681 33L32.6481 33ZM30.7681 43.6401C30.7681 44.1593 31.1889 44.5801 31.7081 44.5801C32.2272 44.5801 32.6481 44.1593 32.6481 43.6401L30.7681 43.6401ZM30.7681 33L30.7681 43.6401L32.6481 43.6401L32.6481 33L30.7681 33Z" fill="#B8C0CC"/>
+      </svg>
+          <p class="text-white">Medical Office</p></section>
+<section class=" button-92 cursor-help bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+  <svg width="61" class="mx-auto" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19.3881 33.7778C19.3881 27.5556 24.3637 24 27.6808 24C31.2267 24 36.3881 27.4924 36.3881 33.7778C36.3881 39.1111 30.9979 40 27.6808 40C24.3637 40 19.3881 39.1111 19.3881 33.7778Z" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <path d="M37.5907 18.0172C37.1793 20.4618 35.1243 21.9687 33.1736 21.6404C31.2229 21.3122 29.7742 19.2158 30.1856 16.7711C30.5969 14.3265 32.6519 12.8196 34.6026 13.1479C36.5534 13.4761 38.002 15.5725 37.5907 18.0172Z" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <path d="M26.3214 16.444C26.7328 18.9722 25.2571 21.0978 23.3139 21.4139C21.3706 21.7301 19.2972 20.1819 18.8859 17.6537C18.4746 15.1255 19.9503 12.9999 21.8935 12.6837C23.8368 12.3676 25.9101 13.9158 26.3214 16.444Z" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <circle cx="15.3881" cy="26" r="3.06" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <path d="M41.6698 29.1159C40.0735 29.7122 38.2874 28.8974 37.6854 27.2856C37.0833 25.6738 37.8979 23.8877 39.4943 23.2914C41.0906 22.6952 42.8767 23.5099 43.4787 25.1217C44.0807 26.7335 43.2662 28.5197 41.6698 29.1159Z" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <path d="M48.6415 38.809L43.5402 40.7403C42.5634 41.1101 41.516 40.6379 41.1462 39.6611L40.5298 38.033C40.16 37.0562 40.6321 36.0088 41.609 35.6389L46.7103 33.7077C47.6871 33.3379 48.7346 33.81 49.1044 34.7869L49.7207 36.415C50.0905 37.3918 49.6184 38.4392 48.6415 38.809Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+    <path d="M49.9759 35.4497L58.0077 32.409" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M10.9018 50.2422L16.2202 48.2288" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8.46902 45.4551L12.1261 55.115" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M43.8225 44.1083L22.0062 52.3675C20.0525 53.1071 17.808 52.0954 17.0684 50.1417L15.5481 46.1257C14.8084 44.172 15.8202 41.9276 17.7739 41.188L39.5902 32.9288C41.5439 32.1892 43.7883 33.2009 44.5279 35.1546L46.0483 39.1705C46.8964 41.0831 45.8847 43.3276 43.8225 44.1083Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+    </svg>
+  <p class="text-white">Pet Services</p></section>
+
+  <section class=" button-92 cursor-help bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+    <svg width="61" class="mx-auto" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M14.6039 38.2366V46.9338C14.6039 50.8907 12.9976 54.4557 10.412 57.0414H35.4851C34.5448 54.8083 33.9964 52.4186 33.8397 49.8721C32.4293 50.4597 30.8622 50.7731 29.2168 50.7731C26.8609 50.7731 24.6587 50.1265 22.7778 49.0006C19.1225 46.8126 16.6802 42.8149 16.6802 38.2366H14.6039Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M37.9208 19.9999L52.6049 19.9999C52.6049 20.2998 51.5012 24.0886 50.631 26.655C50.067 28.3184 48.9391 29.1775 47.4657 29.1775L42.8568 29.1775C41.1441 29.1775 40.141 27.4959 39.8536 26.655L37.9208 19.9999Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M45.2629 29.1775L45.2629 58.0869" stroke="#B8C0CC" stroke-width="1.88" stroke-linecap="round"/>
+      <path d="M41.7534 38.2366C41.7534 45.1709 36.1511 50.7731 29.2168 50.7731C22.2825 50.7731 16.6803 45.1709 16.6803 38.2366H41.7534Z" fill="white" stroke="white" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16.8124 38.2366H41.8855C41.8855 45.1709 36.2832 50.7731 29.3489 50.7731C27.1281 50.7731 25.044 50.1985 23.2367 49.1895" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M12.9 38.3552C11.5256 38.3552 10.3881 37.1851 10.3881 35.7712L10.3881 22.7533L20.4834 22.7533L20.4834 35.7712C20.4834 37.1851 19.3459 38.3552 17.9714 38.3552L12.9 38.3552Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    <p class="text-white">Home Services & Cleaning</p></section>
+
+<section class=" button-92 cursor-help bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+  <svg width="61" class="mx-auto" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M25.309 42.9999C25.6175 43.0028 25.9228 42.9345 26.2023 42.8004C26.4817 42.6663 26.7281 42.4698 26.9232 42.225C27.1185 41.9803 27.2576 41.694 27.3303 41.3868C27.4028 41.0798 27.4071 40.76 27.3429 40.4509C26.7821 38.0441 25.4453 35.9007 23.5483 34.3674C21.6514 32.834 19.305 32 16.8881 32C14.4712 32 12.1248 32.834 10.2278 34.3674C8.33089 35.9007 6.9941 38.0441 6.43329 40.4509C6.36901 40.76 6.37328 41.0798 6.44589 41.3868C6.51852 41.694 6.65764 41.9803 6.85286 42.225C7.04808 42.4698 7.29448 42.6663 7.57387 42.8004C7.85326 42.9345 8.15842 43.0028 8.46697 42.9999H25.309Z" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <path d="M17.8881 29C20.9256 29 23.3881 26.5375 23.3881 23.5C23.3881 20.4624 20.9256 18 17.8881 18C14.8506 18 12.3881 20.4624 12.3881 23.5C12.3881 26.5375 14.8506 29 17.8881 29Z" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <path d="M52.309 34.9999C52.6175 35.0028 52.9228 34.9345 53.2023 34.8004C53.4817 34.6663 53.7281 34.4698 53.9232 34.225C54.1185 33.9803 54.2576 33.694 54.3303 33.3868C54.4028 33.0798 54.4071 32.76 54.3429 32.4509C53.7821 30.0441 52.4453 27.9007 50.5483 26.3674C48.6514 24.834 46.305 24 43.8881 24C41.4712 24 39.1248 24.834 37.2278 26.3674C35.3309 27.9007 33.9941 30.0441 33.4333 32.4509C33.369 32.76 33.3733 33.0798 33.4459 33.3868C33.5185 33.694 33.6576 33.9803 33.8529 34.225C34.0481 34.4698 34.2945 34.6663 34.5739 34.8004C34.8533 34.9345 35.1584 35.0028 35.467 34.9999H52.309Z" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+    <path d="M44.8881 21C47.9256 21 50.3881 18.5375 50.3881 15.5C50.3881 12.4624 47.9256 10 44.8881 10C41.8506 10 39.3881 12.4624 39.3881 15.5C39.3881 18.5375 41.8506 21 44.8881 21Z" fill="white" stroke="#B8C0CC" stroke-width="1.88"/>
+   
+  </svg>  <p class="text-white">Business Operations</p></section>
+<section class="button-92 cursor-help bgbtn bg-blue-500   text-xl  flex btnbg rounded-full py-10 button-92 justify-center flex-col gap-3">
+  <svg width="61" class="mx-auto" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0)">
+    <path d="M38.8475 30.4745L26.9124 42.3775C25.6692 43.6174 23.68 43.6174 22.561 42.3775L10.6259 30.4745C9.38267 29.2346 9.38267 27.2508 10.6259 26.1349L22.561 14.2319C23.8043 12.992 25.7935 12.992 26.9124 14.2319L38.8475 26.1349C40.0908 27.2508 40.0908 29.2346 38.8475 30.4745Z" fill="white" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10"/>
+    <path d="M29.2746 40.8896L35.7395 47.089L40.4638 46.8411V51.5527L45.1881 51.8006V56.7602L52.2746 55.5203L53.1449 48.8249L37.3557 32.7063" fill="white"/>
+    <path d="M29.2746 40.8896L35.7395 47.089L40.4638 46.8411V51.5527L45.1881 51.8006V56.7602L52.2746 55.5203L53.1449 48.8249L37.3557 32.7063" stroke="#B8C0CC" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24.1773 20.0593L17.3394 26.8787" stroke="#C4C4C4" stroke-width="1.88" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="30.7016" cy="28.2047" rx="3.65909" ry="3.65909" fill="#C4C4C4"/>
+    </g>
+    <defs>
+    <clipPath id="clip0">
+    <rect width="46" height="46" fill="white" transform="translate(8.38806 12)"/>
+    </clipPath>
+    </defs>
+    </svg>
+  <p class="text-white">Automotive</p></section>
+</div>
+
+</div>
+</div>
+<!--HERO SECTION/END-->
+
+<!--USERFORM-->
+<div class=" ">
+<div id="lol" class=" mb-52 mt-28">
+<div id="" class="text-center  text-3xl bgbg md:rounded-tl-full md:rounded-t-full  max-sm:rounded-t-3xl mt-24 py-8 text-blue-800 txtbg"> <span class="text-3xl text-blue-800"> Prendre </span> <br> un rendez-vous!</div>
+<div id="" stye class=" body md:px-20 py-24 backdrop-blur-sm   bg-blue-900 bg-opacity-25 rounded-none  ">
+
+
+<!--HADI LFORM LIFIHA KOLSH-->
+  <form action=""  class="" id="form">
+   
+    <div class=" gap-10 lg:grid lg:grid-cols-2 max-sm:grid-rows-2 max-sm:px-5  ">
+      
+    <div class="">
+      <div class="flex md:flex-row max-sm:flex-col max-sm:gap-5  justify-between">
+      <div>
+  <p class="text-blue-700   mb-2 txtbg px-3">First name</p>
+
+  <!--INPUT DYAL FIRSTNAME-->
+<input type="text" placeholder="full name"  class="input px-10 rounded-full max-sm:w-full  bg-white e md:w-full p-5 w- shadoww "></div>
+<!--INPUT DYAL FIRSTNAME/END-->
+<div>
+
+  <p class="text-blue-700  mb-2 txtbg px-3">Last name</p>
+
+  <!--INPUT DYAL LASTTNAME-->
+<input type="text" placeholder="full name"  class="input px-10 rounded-full md:w-full max-sm:w-full bg-white p-5  shadoww "></div>
+<!--INPUT DYAL LASTTNAME/END-->
+</div>
+
+<p class="mt-5 text-blue-700 txtbg mb-2 px-3">Email Address</p>
+
+ <!--INPUT DYAL EMAIL-->
+<input type="email" placeholder="email"  class="input rounded-full w-full  bg-white px-10 p-5">
+ <!--INPUT DYAL EMAIL/END-->
+<p class="mt-5 px-3 mb-2 text-blue-700 txtbg">
+  Phone </p>
+
+   <!--NUMBER PHONE-->
+<input type="text" placeholder="number phone" class="py-5 px-10  bg-white rounded-full  w-full  input">
+ <!--NUMBERPHONE/END-->
+<div></div>
+<div>
+<p class="mb-2 px-3 txtbg text-blue-700 mt-5">More details</p>
+
+ <!--TEXT AREA DYAL LMSG-->
+<textarea name="" id="" placeholder="message" style="resize: none;" class="bg-white rounded-xl input  w-full p-5" cols="30" rows="10"></textarea>
+ <!--TEXT AREA DYAL LMSG/END-->
+
+
+<p class="mt-5 px-3 mb-2 text-blue-700 txtbg">Genre</p>
+<div class="flex flex-row max-sm:justify-around  md:justify-start  gap-5 p-5 pt-1 ">
+  <div class="flex flex-row my-auto bgbtn  p-3 rounded-full button-95 dropbtn ">
+
+    <!--INPUT DYAL MALE OR FEMALE-->
+  <input type="radio" class="radio  button-92 my-auto" name="GENDRE"> <label for="" class="my-auto  txtbg text-white px-4 ">Male</label></div>
+  <div class="flex flex-row bgbtn my-auto  p-3 rounded-full button-95 dropbtn">
+    <input type="radio" class="radio" name="GENDRE"><label for="" class="txtbg text-white px-4 ">Female</label>
+    <!--INPUT DYAL MALE OR FEMALE/END-->
+  </div >
+</div>
+
+</div>
+</div>
+
+
+<div class="flex flex-col  md:px-5">
+ 
+  <p class=" mb-2 px-3  text-blue-700 txtbg">Date du rendez-vous</p>
+  <div class="flex md:flex-row max-sm:flex-col justify-between"> 
+    
+    <!--INPUT DYAL FO9ASH GHYDIR RENDEZ-VOUS-->
+  <input type="date"  class="input button-95 bg-white p-5 max-sm:mb-8 px-20 rounded-full">
+  
+  
+  
+  
+  
+  
+   <!--HADI DYAL LW9T BDBT FASH GHATCLICKI 3LA LES BUTTONS LILT7T DYAL MORNING AFTERNOON EVENING 5sha KATL3 F3AWt 0:00am-->
+  <div class="dropdown">
+    <div  class="dropbtn button-95 px-10 max-sm:text-center  rounded-full px-5  btnbg bgbtn">0:00am <i class="fa-regular fa-clock px-2 my-auto"></i></div>
+    <!--HADI DYAL LW9T BDBT FASH GHATCLICKI 3LA LES BUTTONS LILT7T DYAL MORNING AFTERNOON EVENING 5sha KATL3 F3AWt 0:00am/END-->
+  </div>
+  
+</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  <!--hado les button bash tkhtar lw9t bdbt oshof li9bl mn hadi bash tfhm-->
+
+<div class=" flex flex-col  gap-5 mt-2 ">
+  <div class="p-3  flex flex-col gap-9 ">
+  <div class="flex flex-col gap-4" >
+   <h1 class="txtbg text-lg text-blue-800  ">
+       MORNING
+   </h1>
+   <div class="grid md:grid-cols-4 sm:grid-cols-3 max-sm:grid-cols-2 gap-5">
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">5:30am</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">6:00am</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">6:30am</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">7:00am</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">8:30am</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">9:30am</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">10:00am</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">10:30am</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">11:00am</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">11:30am</p>
+</div>
+  </div>
+      
+  <div class="flex flex-col gap-4" >
+   <h1 class="txtbg text-blue-800  text-lg ">
+       AFTERNOON
+   </h1>
+   <div class="grid md:grid-cols-4 sm:grid-cols-3 max-sm:grid-cols-2 gap-5">
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">12:00am</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">12:30pm</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">1:00pm</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">1:30pm</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">2:00pm</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">2:30pm</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">3:00pm</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">3:30pm</p>
+
+ 
+</div>
+  </div>
+  <div class="flex flex-col gap-4" >
+   <h1 class="txtbg text-lg text-blue-800  ">
+       EVENING
+   </h1>
+   <div class="grid lg:grid-cols-4 sm:grid-cols-3 gap-5">
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">4:00pm</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">4:30pm</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">5:00pm</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">5:30pm</p>
+  <p class="px-5 py-3 button-92 border-blue-800  rounded-full">6:00pm</p>
+
+ <!--hado les button bash tkhtar lw9t bdbt oshof li9bl mn hadi bash tfhm/END-->
+</div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+ <!--INPUT D SUBMIT-->
+<input  type="submit"  name="" id="" class="button-95 max-sm: w-full bg-blue bgbtn text-lg  bg-blue-900 bgbtn rounded-full p-3.5 mt-5">
+<!--INPUT D SUBMIT/END-->
+
+<!--DB GHATMSHI LPAGE DLADMIN OTLINKI HADSHI M3AH-->
+</form>
+
+</div>
+<div id="lol" class="ext-center text-2xl bgbg    mb-24 py-8 text-blue-800 txtbg md:rounded-b-full max-sm:rounded-b-3xl">
+ 
+ </div>
+
+</div>
+
+</div>
+<!--USERFORM/END-->
+
+
+
+
+
+<!--CONTACT OUR TEAM-->
+
+<div>
+<div class="bg-blue-900 bg-opacity-25  p-12 rounded-lg flex flex-col ">
+  <h1 class="txtbg text-blue-800 pb-5 text-center text-3xl">Connect with our team of experts</h1>
+  <div class="grid md:grid-cols-2 max-sm:flex-rows-2 m-auto  md:gap-32 max-sm:gap-16 sm:gap-16 p-8 text-center">
+  <div>  <img src="1BE19BD4-F516-42C0-9D96-20A09B916A2A.jpeg" class="rounded-full w-32 m-auto" alt=""><div class="p-4"><h3 class="p-2 text-lg text-blue-700 txtbg">Anas El Messoual</h3> <small class="button-95 px-3 p-2 rounded-full">FrontEnd Developer</small></div></div> <div>  <img src="F3719ABC-E6E0-4CAF-8F1D-7743751BFCF0.jpeg" alt="" class="rounded-full w-32 m-auto"><div class="p-4"><h3 class="p-2 text-lg text-blue-700 txtbg">Zakariya El Khairi</h3><small class="button-95  p-2 px-3 rounded-full btnbg">BackEnd Developer</small></div></div>
+  </div>
+  <h2 class="text-lg text-center md:px-40 text-blue-600">
+  You can email us your requirements at anaselmessoualshiba@gmail.com. or simply book a quick call with our product experts from below
+  </h2>
+  </div>
+  
+  
+  </div>
+  <!--CONTACT OUT TEAM/END-->
+
+
+
+
+
+
+
+
+
+<!--MORE-->
+
+<div class="grid md:grid-cols-3 max-sm:grid-rows-3 sm:gap-16 max-sm:gap-16 text-blue-500  p-8 my-16 mt-32">
+  <div>
+    <h1 class="text-blue-900 py-5 text-xl">PRODUCT</h1>
+    <ol style="line-height: 30px;">
+      <li> <a href="NODEJS.html">  HOME</a></li>
+      <li> <a href="#form"> PRENDRE UN RENDEZ-VOUS</a></li>
+      <li> <a href="loginadmoin.html">ADMIN</a></li>
+      <a href="#INFO"> <li>ABOUT</li></a>
+    </ol>
+  </div>
+  <div><h1 class="text-blue-900 py-5 text-xl">SUPPORT</h1>
+  <ol class=" "style="line-height: 30px;">CONNECT WIHT US</ol>
+<div class="flex gap-5"> <a href="https://www.facebook.com/GOD696"> <i class="fa-brands fa-facebook-f text-2xl my-auto "></i> </a> <a href="https://www.instagram.com/_anaselmesse/"> <i class="fa-brands fa-instagram text-2xl my-auto"></i></a></div>
+</div>
+  <div><h1 class="text-blue-900 py-5 text-xl">CONTACT US</h1>
+  <ol class="" style="line-height: 30px;">
+    <li>N 17 RUE 13 RUE OUEDFES, FES</li>
+    <li>anaselmessoualshiba@gmail.com</li>
+  
+  </ol></div>
+</div>
+
+
+<!--MORE/END-->
+
+
+<a href="#HOME">
+<div id="updown" class="hidden fixed bottom-8 right-8 rounded-full">
+  <i class="fa-solid fa-house text-white text-lg p-5 button-92 rounded-full btn cursor-pointer px-6 "></i>
+</div></a>
+<!--FOOTER-->
+
+<footer class="  rounded-t-full flex txtbg   px-16 bgbg py-2  ">
+<p class="m-auto text-blue-800 ">© Copyright 2023 All Rights Reserved</p>
+</footer>
+<!--FOOTER/END-->
+
+
+
+  <script src="NODEJS.js"></script>
+</body>
+</html>
